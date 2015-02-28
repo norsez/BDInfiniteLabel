@@ -26,13 +26,13 @@
 
 - (NSAttributedString*)_longSampleText
 {
-  NSMutableAttributedString* astr = [[NSMutableAttributedString alloc] initWithString:kLyrics attributes:@{}];
+  NSMutableAttributedString* astr = [[NSMutableAttributedString alloc] initWithString:kLyrics attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12]}];
   
   NSArray* fonts = @[[UIFont systemFontOfSize:20], [UIFont systemFontOfSize:10], [UIFont boldSystemFontOfSize:15]];
   
   NSInteger lastIndex = 0;
   for (UIFont *f in fonts) {
-    NSInteger len = MIN(arc4random_uniform(7), kLyrics.length);
+    NSInteger len = MIN(arc4random_uniform(30), kLyrics.length);
     [astr setAttributes:@{NSFontAttributeName: f} range:(NSRange){lastIndex, len}];
     lastIndex += len;
   }
