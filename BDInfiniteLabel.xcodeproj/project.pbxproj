@@ -12,9 +12,9 @@
 		F3A99A1C1AA0780F00A0FD21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A99A1B1AA0780F00A0FD21 /* ViewController.m */; };
 		F3A99A1F1AA0780F00A0FD21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A99A1D1AA0780F00A0FD21 /* Main.storyboard */; };
 		F3A99A211AA0780F00A0FD21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A99A201AA0780F00A0FD21 /* Images.xcassets */; };
-		F3A99A241AA0780F00A0FD21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A99A221AA0780F00A0FD21 /* LaunchScreen.xib */; };
 		F3A99A301AA0780F00A0FD21 /* BDInfiniteLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A99A2F1AA0780F00A0FD21 /* BDInfiniteLabelTests.m */; };
 		F3A99A3B1AA0784500A0FD21 /* BDInfiniteLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A99A3A1AA0784500A0FD21 /* BDInfiniteLabel.m */; };
+		F3A99A3E1AA1B11400A0FD21 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A99A3D1AA1B11400A0FD21 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +37,12 @@
 		F3A99A1B1AA0780F00A0FD21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F3A99A1E1AA0780F00A0FD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3A99A201AA0780F00A0FD21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F3A99A231AA0780F00A0FD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F3A99A291AA0780F00A0FD21 /* BDInfiniteLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDInfiniteLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A99A2E1AA0780F00A0FD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A99A2F1AA0780F00A0FD21 /* BDInfiniteLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDInfiniteLabelTests.m; sourceTree = "<group>"; };
 		F3A99A391AA0784500A0FD21 /* BDInfiniteLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDInfiniteLabel.h; path = Classes/BDInfiniteLabel.h; sourceTree = "<group>"; };
 		F3A99A3A1AA0784500A0FD21 /* BDInfiniteLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDInfiniteLabel.m; path = Classes/BDInfiniteLabel.m; sourceTree = "<group>"; };
+		F3A99A3D1AA1B11400A0FD21 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A99A3E1AA1B11400A0FD21 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +67,7 @@
 		F3A99A071AA0780F00A0FD21 = {
 			isa = PBXGroup;
 			children = (
+				F3A99A3D1AA1B11400A0FD21 /* QuartzCore.framework */,
 				F3A99A121AA0780F00A0FD21 /* BDInfiniteLabel */,
 				F3A99A2C1AA0780F00A0FD21 /* BDInfiniteLabelTests */,
 				F3A99A111AA0780F00A0FD21 /* Products */,
@@ -91,7 +93,6 @@
 				F3A99A1B1AA0780F00A0FD21 /* ViewController.m */,
 				F3A99A1D1AA0780F00A0FD21 /* Main.storyboard */,
 				F3A99A201AA0780F00A0FD21 /* Images.xcassets */,
-				F3A99A221AA0780F00A0FD21 /* LaunchScreen.xib */,
 				F3A99A131AA0780F00A0FD21 /* Supporting Files */,
 			);
 			path = BDInfiniteLabel;
@@ -213,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A99A1F1AA0780F00A0FD21 /* Main.storyboard in Resources */,
-				F3A99A241AA0780F00A0FD21 /* LaunchScreen.xib in Resources */,
 				F3A99A211AA0780F00A0FD21 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,14 +264,6 @@
 				F3A99A1E1AA0780F00A0FD21 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F3A99A221AA0780F00A0FD21 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3A99A231AA0780F00A0FD21 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -426,6 +418,7 @@
 				F3A99A351AA0780F00A0FD21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3A99A361AA0780F00A0FD21 /* Build configuration list for PBXNativeTarget "BDInfiniteLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +427,7 @@
 				F3A99A381AA0780F00A0FD21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
