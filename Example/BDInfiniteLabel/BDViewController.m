@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 bluedot. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BDViewController.h"
 #import "BDInfiniteLabel.h"
 
 #define kLyrics @"I want to be… I want to be. Someday I want to be. One shining star. Shine on where you are. Oh why. Oh why. My baby, won't you smile? I will not stop trying until your tears are dried."
 
-@interface ViewController ()
+@interface BDViewController ()
 @property (weak, nonatomic) IBOutlet BDInfiniteLabel *infiniteLabel;
 
 @end
 
-@implementation ViewController
+@implementation BDViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
