@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'BDInfiniteLabel', :exclusive => true do
+  pod "BDInfiniteLabel", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "BDInfiniteLabel", :path => "../"
+
+  
+end

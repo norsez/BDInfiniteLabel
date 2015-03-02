@@ -1,0 +1,14 @@
+PODS:
+  - BDInfiniteLabel (0.1.0)
+
+DEPENDENCIES:
+  - BDInfiniteLabel (from `../`)
+
+EXTERNAL SOURCES:
+  BDInfiniteLabel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BDInfiniteLabel: c70e1d751d4febeeef8b858ec560d9b4748a5c72
+
+COCOAPODS: 0.35.0
