@@ -5,6 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/BDInfiniteLabel.svg?style=flat)](http://cocoadocs.org/docsets/BDInfiniteLabel)
 [![Platform](https://img.shields.io/cocoapods/p/BDInfiniteLabel.svg?style=flat)](http://cocoadocs.org/docsets/BDInfiniteLabel)
 
+## What is it?
+
+You hate it when long texts mess up your layout on iOS. UILabel font scaling doesn't really look quite right. Multi-line UILabel sometimes is not an option either. 
+
+Meet `BDInfiniteLabel`. 
+
+`BDInfiniteLabel` allows long texts to be displayed on screen with a paging button so that user can tap to page through the whole text.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
