@@ -89,6 +89,15 @@
   return _label.bounds.size;
 }
 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+  UIView *hitView = [super hitTest:point withEvent:event];
+  if (hitView == _navButton) {
+    return _navButton;
+  }else{
+    return nil;
+  }
+}
 
 - (void)didTapPageControl:(id)sender
 {

@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BDInfiniteLabel"
-  s.version          = "0.3.0"
+  s.version          = "0.4.0"
   s.summary          = "One-line label control that allows user to easily scroll long NSAttributedString."
   s.description      = <<-DESC
                        One-line label control that allows user to easily scroll long NSAttributedString.
