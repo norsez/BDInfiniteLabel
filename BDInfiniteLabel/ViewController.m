@@ -32,7 +32,7 @@
   
   NSInteger lastIndex = 0;
   for (UIFont *f in fonts) {
-    NSInteger len = MIN(arc4random_uniform(30), kLyrics.length);
+    NSInteger len = MIN(arc4random_uniform(30) + 7, kLyrics.length);
     [astr setAttributes:@{NSFontAttributeName: f} range:(NSRange){lastIndex, len}];
     lastIndex += len;
   }
