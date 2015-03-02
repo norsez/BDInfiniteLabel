@@ -38,10 +38,10 @@
   
   _navButton = [[UIButton alloc] initWithFrame:CGRectZero];
   _navButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-  _navButton.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
-  _navButton.alpha = 0.65;
+  _navButton.backgroundColor = [UIColor colorWithWhite:0 alpha:0.25];
+  _navButton.alpha = 0.45;
   [_navButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-  [_navButton setTitle:@"⚈" forState:UIControlStateNormal];
+  [_navButton setAttributedTitle:[[NSAttributedString alloc] initWithString:@"…" attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:14], NSForegroundColorAttributeName: [UIColor whiteColor]}]  forState:UIControlStateNormal];
   _navButton.layer.cornerRadius = 5;
   [_navButton addTarget:self action:@selector(didTapPageControl:) forControlEvents:UIControlEventTouchUpInside];
   
