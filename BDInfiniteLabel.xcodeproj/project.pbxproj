@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F317E2551AA40B210022E1BD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F317E2541AA40B210022E1BD /* LICENSE */; };
 		F3A99A161AA0780F00A0FD21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A99A151AA0780F00A0FD21 /* main.m */; };
 		F3A99A191AA0780F00A0FD21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A99A181AA0780F00A0FD21 /* AppDelegate.m */; };
 		F3A99A1C1AA0780F00A0FD21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A99A1B1AA0780F00A0FD21 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F317E2541AA40B210022E1BD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F3A99A101AA0780F00A0FD21 /* BDInfiniteLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDInfiniteLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A99A141AA0780F00A0FD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A99A151AA0780F00A0FD21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,7 +69,6 @@
 		F3A99A071AA0780F00A0FD21 = {
 			isa = PBXGroup;
 			children = (
-				F3A99A3D1AA1B11400A0FD21 /* QuartzCore.framework */,
 				F3A99A121AA0780F00A0FD21 /* BDInfiniteLabel */,
 				F3A99A2C1AA0780F00A0FD21 /* BDInfiniteLabelTests */,
 				F3A99A111AA0780F00A0FD21 /* Products */,
@@ -101,6 +102,8 @@
 		F3A99A131AA0780F00A0FD21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F317E2541AA40B210022E1BD /* LICENSE */,
+				F3A99A3D1AA1B11400A0FD21 /* QuartzCore.framework */,
 				F3A99A141AA0780F00A0FD21 /* Info.plist */,
 				F3A99A151AA0780F00A0FD21 /* main.m */,
 			);
@@ -213,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F317E2551AA40B210022E1BD /* LICENSE in Resources */,
 				F3A99A1F1AA0780F00A0FD21 /* Main.storyboard in Resources */,
 				F3A99A211AA0780F00A0FD21 /* Images.xcassets in Resources */,
 			);
