@@ -13,9 +13,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* BDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* BDAppDelegate.m */; };
-		6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
-		6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A2195388D20070C39A /* Main_iPad.storyboard */; };
-		6003F5A7195388D20070C39A /* BDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* BDViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -24,6 +21,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		BC12FB131700958EDFDC8B1F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E12F97B2973CB779153FAB4 /* libPods-Tests.a */; };
 		BFF651554738E56709881373 /* libPods-BDInfiniteLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C911F06B276A5F81FE2466 /* libPods-BDInfiniteLabel.a */; };
+		F317E2651AA44FCA0022E1BD /* BDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F317E2631AA44FCA0022E1BD /* BDTableViewController.m */; };
+		F317E26A1AA451330022E1BD /* BDInfiniteLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F317E2681AA451330022E1BD /* BDInfiniteLabelTableViewCell.m */; };
+		F317E26B1AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F317E2691AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +51,6 @@
 		6003F59B195388D20070C39A /* BDInfiniteLabel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDInfiniteLabel-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* BDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* BDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6003F5A3195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* BDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* BDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -66,6 +62,11 @@
 		6E12F97B2973CB779153FAB4 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72EF2AA8FF0EF6168C06FFE6 /* Pods-BDInfiniteLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDInfiniteLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDInfiniteLabel/Pods-BDInfiniteLabel.release.xcconfig"; sourceTree = "<group>"; };
 		F270A706411683C505E548BB /* Pods-BDInfiniteLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDInfiniteLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDInfiniteLabel/Pods-BDInfiniteLabel.debug.xcconfig"; sourceTree = "<group>"; };
+		F317E2621AA44FCA0022E1BD /* BDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTableViewController.h; sourceTree = "<group>"; };
+		F317E2631AA44FCA0022E1BD /* BDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDTableViewController.m; sourceTree = "<group>"; };
+		F317E2671AA451330022E1BD /* BDInfiniteLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDInfiniteLabelTableViewCell.h; sourceTree = "<group>"; };
+		F317E2681AA451330022E1BD /* BDInfiniteLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDInfiniteLabelTableViewCell.m; sourceTree = "<group>"; };
+		F317E2691AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDInfiniteLabelTableViewCell.xib; sourceTree = "<group>"; };
 		F87092AD28D422CD9A2F01DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,12 +144,13 @@
 		6003F593195388D20070C39A /* BDInfiniteLabel */ = {
 			isa = PBXGroup;
 			children = (
+				F317E2671AA451330022E1BD /* BDInfiniteLabelTableViewCell.h */,
+				F317E2681AA451330022E1BD /* BDInfiniteLabelTableViewCell.m */,
+				F317E2691AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib */,
+				F317E2621AA44FCA0022E1BD /* BDTableViewController.h */,
+				F317E2631AA44FCA0022E1BD /* BDTableViewController.m */,
 				6003F59C195388D20070C39A /* BDAppDelegate.h */,
 				6003F59D195388D20070C39A /* BDAppDelegate.m */,
-				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
-				6003F5A5195388D20070C39A /* BDViewController.h */,
-				6003F5A6195388D20070C39A /* BDViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -276,9 +278,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
+				F317E26B1AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,8 +362,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F317E26A1AA451330022E1BD /* BDInfiniteLabelTableViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* BDAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* BDViewController.m in Sources */,
+				F317E2651AA44FCA0022E1BD /* BDTableViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,22 +394,6 @@
 				6003F597195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6003F59F195388D20070C39A /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A0195388D20070C39A /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6003F5A2195388D20070C39A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A3195388D20070C39A /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
@@ -504,6 +490,7 @@
 				INFOPLIST_FILE = "BDInfiniteLabel/BDInfiniteLabel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -519,6 +506,7 @@
 				INFOPLIST_FILE = "BDInfiniteLabel/BDInfiniteLabel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
