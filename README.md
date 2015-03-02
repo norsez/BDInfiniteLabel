@@ -1,9 +1,9 @@
 # BDInfiniteLabel
 
-#[![CI Status](http://img.shields.io/travis/Norsez Orankijanan/BDInfiniteLabel.svg?style=flat)](https://travis-ci.org/Norsez Orankijanan/BDInfiniteLabel)
-#[![Version](https://img.shields.io/cocoapods/v/BDInfiniteLabel.svg?style=flat)](http://cocoadocs.org/docsets/BDInfiniteLabel)
-#[![License](https://img.shields.io/cocoapods/l/BDInfiniteLabel.svg?style=flat)](http://cocoadocs.org/docsets/BDInfiniteLabel)
-#[![Platform](https://img.shields.io/cocoapods/p/BDInfiniteLabel.svg?style=flat)](http://cocoadocs.org/docsets/BDInfiniteLabel)
+[![CI Status](http://img.shields.io/travis/Norsez Orankijanan/BDInfiniteLabel.svg?style=flat)](https://travis-ci.org/Norsez Orankijanan/BDInfiniteLabel)
+[![Version](https://img.shields.io/cocoapods/v/BDInfiniteLabel.svg?style=flat)](http://cocoadocs.org/docsets/BDInfiniteLabel)
+[![License](https://img.shields.io/cocoapods/l/BDInfiniteLabel.svg?style=flat)](http://cocoadocs.org/docsets/BDInfiniteLabel)
+[![Platform](https://img.shields.io/cocoapods/p/BDInfiniteLabel.svg?style=flat)](http://cocoadocs.org/docsets/BDInfiniteLabel)
 
 ## Usage
 
