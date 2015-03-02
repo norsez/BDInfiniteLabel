@@ -7,7 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+ Main class for BDInfiniteLabel. A text control that displays one-line 
+ NSAttributedString with a button for the user to page through the long text, if needed.
+ */
 @interface BDInfiniteLabel : UIView
+/**
+ The text to display.
+ */
 @property (nonatomic, strong) NSAttributedString* attributedString;
+/**
+ The string used on the paging button to indicate that there is more text to display.
+ */
+@property (nonatomic, strong) NSString* hasMoreIndicatorText;
+/**
+ The string used on the paging button to indicate that this is the end of all text.
+ */
+@property (nonatomic, strong) NSString* goBackIndicatorText;
+
+/**
+ Transparency value for the has more button. 
+ */
+@property (nonatomic, assign) CGFloat hasMoreButtonTransparency;
 @end
