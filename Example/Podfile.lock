@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BDInfiniteLabel: c70e1d751d4febeeef8b858ec560d9b4748a5c72
+  BDInfiniteLabel: 60cbcbbeeb69508f31ee9bf3e28ed226d68cda23
 
 COCOAPODS: 0.35.0
