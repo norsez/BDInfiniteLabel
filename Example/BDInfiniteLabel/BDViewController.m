@@ -11,6 +11,8 @@
 
 #define kLyrics @"I want to be… I want to be. Someday I want to be. One shining star. Shine on where you are. Oh why. Oh why. My baby, won't you smile? I will not stop trying until your tears are dried."
 
+//#define kLyrics @"I want to be…"
+
 @interface BDViewController ()
 @property (weak, nonatomic) IBOutlet BDInfiniteLabel *infiniteLabel;
 
@@ -33,6 +35,11 @@
   NSInteger lastIndex = 0;
   for (UIFont *f in fonts) {
     NSInteger len = MIN(arc4random_uniform(30) + 7, kLyrics.length);
+    
+    if (lastIndex + len > kLyrics.length) {
+      break;
+    }
+    
     [astr setAttributes:@{NSFontAttributeName: f} range:(NSRange){lastIndex, len}];
     lastIndex += len;
   }

@@ -59,6 +59,7 @@
   //pad text tail for space
   const CGFloat kPadding =  0.5 * CGRectGetWidth(self.bounds);
   CGRect boundingRect = [_label.attributedText boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGRectGetHeight(self.bounds)) options:0 context:0];
+  _navButton.hidden = boundingRect.size.width <= self.bounds.size.width;
   boundingRect.size.width += kPadding;
   boundingRect.origin = CGPointZero;
   _label.frame = boundingRect;
