@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BDInfiniteLabel.h
 //  BDInfiniteLabel
 //
 //  Created by Norsez Orankijanan on 2/27/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface BDInfiniteLabel : UIView
+@property (nonatomic, strong) NSAttributedString* attributedString;
 @end
-
