@@ -7,6 +7,21 @@
 //
 
 #import "BDInfiniteLabel.h"
+
+@interface NoTouchScrollView : UIScrollView
+
+@end
+
+@implementation NoTouchScrollView
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+  return nil;
+}
+
+@end
+
+
 @interface BDInfiniteLabel () <UIScrollViewDelegate>
 {
   UIScrollView* _scrollView;
@@ -23,7 +38,7 @@
 - (void)_initialize
 {
   self.backgroundColor = [UIColor clearColor];
-  _scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+  _scrollView = [[NoTouchScrollView alloc] initWithFrame:CGRectZero];
   _scrollView.delegate = self;
   _scrollView.backgroundColor = [UIColor clearColor];
   _scrollView.showsVerticalScrollIndicator = NO;
@@ -87,16 +102,6 @@
 - (CGSize)intrinsicContentSize
 {
   return _label.bounds.size;
-}
-
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-  UIView *hitView = [super hitTest:point withEvent:event];
-  if (hitView == _navButton) {
-    return _navButton;
-  }else{
-    return nil;
-  }
 }
 
 - (void)didTapPageControl:(id)sender
