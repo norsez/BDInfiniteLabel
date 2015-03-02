@@ -81,7 +81,7 @@
 {
   _label.attributedText = self.attributedString;
   [_scrollView setContentOffset:CGPointMake(0, 0)];
-  [self setNeedsLayout];
+  [self layoutSubviews];
 }
 
 - (CGSize)intrinsicContentSize
