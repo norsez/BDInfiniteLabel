@@ -81,10 +81,10 @@
   
   boundingRect.origin = CGPointZero;
   _label.frame = boundingRect;
-  CGRect navButtonFrame = CGRectMake(0, 0, kWidthNavButton, MIN(kWidthNavButton, CGRectGetHeight(_label.frame)));
-  navButtonFrame.origin.x = CGRectGetWidth(self.bounds) - _hasMoreButton.bounds.size.width;
-  navButtonFrame.origin.y = 0.5 * (CGRectGetHeight(self.bounds) - navButtonFrame.size.height);
-  _hasMoreButton.frame = navButtonFrame;
+  CGRect hasMoreButtonFrame = CGRectMake(0, 0, kWidthNavButton, MIN(kWidthNavButton, CGRectGetHeight(_label.frame)));
+  hasMoreButtonFrame.origin.x = CGRectGetWidth(self.bounds) - _hasMoreButton.bounds.size.width;
+  hasMoreButtonFrame.origin.y = 0.5 * (CGRectGetHeight(self.bounds) - hasMoreButtonFrame.size.height);
+  _hasMoreButton.frame = hasMoreButtonFrame;
   
   CGSize contentSize = boundingRect.size;
   contentSize.width += 200;
