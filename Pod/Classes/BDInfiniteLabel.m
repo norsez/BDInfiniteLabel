@@ -7,7 +7,7 @@
 //
 
 #import "BDInfiniteLabel.h"
-
+#define kWidthNavButton 24
 @interface NoTouchScrollView : UIScrollView
 
 @end
@@ -39,7 +39,7 @@
 {
   _hasMoreIndicatorText = @"…";
   _goBackIndicatorText = @"⬅︎";
-  _hasMoreButtonTransparency = 0.65;
+  _hasMoreButtonTransparency = 0.35;
   
   self.backgroundColor = [UIColor clearColor];
   _scrollView = [[NoTouchScrollView alloc] initWithFrame:CGRectZero];
@@ -57,7 +57,7 @@
   
   _hasMoreButton = [[UIButton alloc] initWithFrame:CGRectZero];
   _hasMoreButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-  _hasMoreButton.backgroundColor = [UIColor colorWithWhite:0 alpha:0.25];
+  _hasMoreButton.backgroundColor = [UIColor colorWithWhite:0 alpha:0.45];
   _hasMoreButton.alpha = self.hasMoreButtonTransparency;
   [_hasMoreButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
   [_hasMoreButton setAttributedTitle:[[NSAttributedString alloc] initWithString:self.hasMoreIndicatorText attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:14], NSForegroundColorAttributeName: [UIColor whiteColor]}]  forState:UIControlStateNormal];
@@ -76,19 +76,18 @@
   _scrollView.frame = self.bounds;
   
   //pad text tail for space
-  const CGFloat kPadding =  0.5 * CGRectGetWidth(self.bounds);
   CGRect boundingRect = [_label.attributedText boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGRectGetHeight(self.bounds)) options:0 context:0];
   _hasMoreButton.hidden = boundingRect.size.width <= self.bounds.size.width;
-  boundingRect.size.width += kPadding;
+  
   boundingRect.origin = CGPointZero;
   _label.frame = boundingRect;
-  CGRect navButtonFrame = CGRectMake(0, 0, 24, MIN(24, CGRectGetHeight(_label.frame)));
+  CGRect navButtonFrame = CGRectMake(0, 0, kWidthNavButton, MIN(kWidthNavButton, CGRectGetHeight(_label.frame)));
   navButtonFrame.origin.x = CGRectGetWidth(self.bounds) - _hasMoreButton.bounds.size.width;
   navButtonFrame.origin.y = 0.5 * (CGRectGetHeight(self.bounds) - navButtonFrame.size.height);
   _hasMoreButton.frame = navButtonFrame;
   
   CGSize contentSize = boundingRect.size;
-  contentSize.width += kPadding;
+  contentSize.width += 200;
   _scrollView.contentSize = contentSize;
   
   _hasMoreButton.alpha = self.hasMoreButtonTransparency;
@@ -116,7 +115,8 @@
   NSInteger totalPages = (NSInteger)(_scrollView.contentSize.width / CGRectGetWidth(_scrollView.bounds)) + 1;
 
   _currentPage = (_currentPage + 1) % totalPages;
-  [_scrollView setContentOffset:CGPointMake(_currentPage * pageWidth, 0) animated:YES];
+  CGFloat x = _currentPage * pageWidth;
+  [_scrollView setContentOffset:CGPointMake(x, 0) animated:YES];
   
   if (_currentPage == totalPages - 1) {
     
@@ -125,14 +125,15 @@
     } completion:^(BOOL finished) {
         [_hasMoreButton setAttributedTitle:[[NSAttributedString alloc] initWithString:self.goBackIndicatorText attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:14], NSForegroundColorAttributeName: [UIColor whiteColor]}]  forState:UIControlStateNormal];
        [UIView animateWithDuration:0.2 animations:^{
-         _hasMoreButton.alpha = self.hasMoreButtonTransparency;
+         _hasMoreButton.alpha = 1;
+         
        }];
     }];
-    
     
   }else {
     [_hasMoreButton setAttributedTitle:[[NSAttributedString alloc] initWithString:self.hasMoreIndicatorText attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:14], NSForegroundColorAttributeName: [UIColor whiteColor]}]  forState:UIControlStateNormal];
   }
+  _hasMoreButton.alpha = self.hasMoreButtonTransparency;
 }
 
 - (void)setAttributedString:(NSAttributedString *)attributedText

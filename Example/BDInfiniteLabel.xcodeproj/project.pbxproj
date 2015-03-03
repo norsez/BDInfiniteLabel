@@ -24,6 +24,7 @@
 		F317E2651AA44FCA0022E1BD /* BDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F317E2631AA44FCA0022E1BD /* BDTableViewController.m */; };
 		F317E26A1AA451330022E1BD /* BDInfiniteLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F317E2681AA451330022E1BD /* BDInfiniteLabelTableViewCell.m */; };
 		F317E26B1AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F317E2691AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib */; };
+		F317E26D1AA54E3A0022E1BD /* newsheadlines.plist in Resources */ = {isa = PBXBuildFile; fileRef = F317E26C1AA54E3A0022E1BD /* newsheadlines.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F317E2671AA451330022E1BD /* BDInfiniteLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDInfiniteLabelTableViewCell.h; sourceTree = "<group>"; };
 		F317E2681AA451330022E1BD /* BDInfiniteLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDInfiniteLabelTableViewCell.m; sourceTree = "<group>"; };
 		F317E2691AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDInfiniteLabelTableViewCell.xib; sourceTree = "<group>"; };
+		F317E26C1AA54E3A0022E1BD /* newsheadlines.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = newsheadlines.plist; sourceTree = "<group>"; };
 		F87092AD28D422CD9A2F01DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F317E26C1AA54E3A0022E1BD /* newsheadlines.plist */,
 				6003F595195388D20070C39A /* BDInfiniteLabel-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -281,6 +284,7 @@
 				F317E26B1AA451330022E1BD /* BDInfiniteLabelTableViewCell.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				F317E26D1AA54E3A0022E1BD /* newsheadlines.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

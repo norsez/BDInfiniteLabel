@@ -23,15 +23,14 @@
   
   _data = @[];
   
-  for (int i = 0; i < 10; i++) {
-    NSString* string = @"1234 ";
-    NSInteger sentences = arc4random_uniform(3) + 2;
-    for (int j = 0; j < sentences; j++) {
-      string = [string stringByAppendingString:string];
-    }
-    NSAttributedString *astr = [[NSAttributedString alloc] initWithString:string attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:20]}];
-    _data = [_data arrayByAddingObject:astr];
-  }
+  NSString* path = [[NSBundle mainBundle] pathForResource:@"newsheadlines" ofType:@"plist"];
+  NSData* fd = [[NSData alloc] initWithContentsOfFile:path];
+  NSDictionary* plist = [NSPropertyListSerialization propertyListWithData:fd options:0 format:0 error:0];
+  _data = [plist valueForKey:@"items"];
+  _data = [_data sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+    //shuffle
+    return arc4random_uniform(2) % 2 == 1? NSOrderedAscending: NSOrderedDescending;
+  }];
 }
 
 #pragma mark - Table view data source
@@ -50,7 +49,7 @@
     
   BDInfiniteLabelTableViewCell *bcell = (BDInfiniteLabelTableViewCell*)cell;
   
-  bcell.infiniteLabel.attributedString = (NSAttributedString*) _data[indexPath.row];
+  bcell.infiniteLabel.attributedString = [[NSAttributedString alloc] initWithString: _data[indexPath.row] attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor blackColor]}];
   
   return cell;
 }

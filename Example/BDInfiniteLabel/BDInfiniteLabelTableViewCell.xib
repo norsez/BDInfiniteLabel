@@ -16,12 +16,12 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGc-eX-haU" customClass="BDInfiniteLabel">
-                        <rect key="frame" x="8" y="8" width="304" height="36.5"/>
+                        <rect key="frame" x="28" y="8" width="284" height="36.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="CGc-eX-haU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NzY-Zm-GVZ"/>
+                    <constraint firstItem="CGc-eX-haU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="NzY-Zm-GVZ"/>
                     <constraint firstAttribute="bottomMargin" secondItem="CGc-eX-haU" secondAttribute="bottom" id="STZ-OW-cdQ"/>
                     <constraint firstItem="CGc-eX-haU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="eHb-rE-M3n"/>
                     <constraint firstItem="CGc-eX-haU" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="y7P-Ai-fOb"/>
