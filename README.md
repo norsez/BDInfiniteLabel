@@ -13,6 +13,7 @@ Meet `BDInfiniteLabel`.
 
 `BDInfiniteLabel` allows long texts to be displayed on screen with a paging button so that user can tap to page through the whole text.
 
+[![BDInfiniteLabel](http://img.youtube.com/vi/UDCLJ0BCSSk/0.jpg)](http://youtu.be/UDCLJ0BCSSk)
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
