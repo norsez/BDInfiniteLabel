@@ -92,6 +92,14 @@
   _scrollView.contentSize = contentSize;
   
   _hasMoreButton.alpha = self.hasMoreButtonTransparency;
+  
+  
+  _hasMoreButton.hidden = self.hasMoreButtonHidden;
+  if (self.hasMoreButtonHidden) {
+    CGRect f = _label.frame;
+    f.size.width = CGRectGetWidth(_scrollView.frame);
+    _label.frame = f;
+  }
 }
 
 #pragma mark - scrollview delegate

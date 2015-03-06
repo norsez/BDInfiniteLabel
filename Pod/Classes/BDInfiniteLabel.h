@@ -34,4 +34,9 @@
  Padding size of the has more button.
  */
 @property (nonatomic, assign) CGFloat hasMoreButtonPadding;
+
+/**
+ Disable the has more button and disguise it as UILabel.
+ */
+@property (nonatomic, assign) BOOL hasMoreButtonHidden;
 @end
