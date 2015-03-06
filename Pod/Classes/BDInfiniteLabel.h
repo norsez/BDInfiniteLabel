@@ -29,4 +29,9 @@
  Transparency value for the has more button. 
  */
 @property (nonatomic, assign) CGFloat hasMoreButtonTransparency;
+
+/**
+ Padding size of the has more button.
+ */
+@property (nonatomic, assign) CGFloat hasMoreButtonPadding;
 @end

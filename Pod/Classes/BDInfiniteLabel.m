@@ -40,6 +40,7 @@
   _hasMoreIndicatorText = @"…";
   _goBackIndicatorText = @"⬅︎";
   _hasMoreButtonTransparency = 0.35;
+  self.hasMoreButtonPadding = 8;
   
   self.backgroundColor = [UIColor clearColor];
   _scrollView = [[NoTouchScrollView alloc] initWithFrame:CGRectZero];
@@ -81,7 +82,7 @@
   
   boundingRect.origin = CGPointZero;
   _label.frame = boundingRect;
-  CGRect hasMoreButtonFrame = CGRectMake(0, 0, kWidthNavButton, MIN(kWidthNavButton, CGRectGetHeight(_label.frame)));
+  CGRect hasMoreButtonFrame = CGRectMake(0, 0, kWidthNavButton + self.hasMoreButtonPadding, MIN(kWidthNavButton, CGRectGetHeight(_label.frame)) + self.hasMoreButtonPadding);
   hasMoreButtonFrame.origin.x = CGRectGetWidth(self.bounds) - _hasMoreButton.bounds.size.width;
   hasMoreButtonFrame.origin.y = 0.5 * (CGRectGetHeight(self.bounds) - hasMoreButtonFrame.size.height);
   _hasMoreButton.frame = hasMoreButtonFrame;
