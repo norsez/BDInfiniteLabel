@@ -1,1 +1,0 @@
-PODS_BDINFINITELABEL_BDINFINITELABEL_OTHER_LDFLAGS = -framework "QuartzCore" -framework "UIKit"

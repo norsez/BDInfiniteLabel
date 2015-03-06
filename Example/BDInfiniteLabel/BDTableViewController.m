@@ -51,6 +51,7 @@
   
   bcell.infiniteLabel.attributedString = [[NSAttributedString alloc] initWithString: _data[indexPath.row] attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor blackColor]}];
   
+  
   return cell;
 }
 

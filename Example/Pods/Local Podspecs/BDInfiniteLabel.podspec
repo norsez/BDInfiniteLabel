@@ -9,11 +9,11 @@
 
 Pod::Spec.new do |s|
   s.name             = "BDInfiniteLabel"
-  s.version          = "0.1.0"
-  s.summary          = "One-line label control that allows user to easily scroll long NSAttributedString."
+  s.version          = "0.10.0"
+  s.summary          = "One-line label control that allows user to easily scroll long NSAttributedString. Something UILabel doesn't do.'"
   s.description      = <<-DESC
                        One-line label control that allows user to easily scroll long NSAttributedString.
-
+Something UILabel doesn't do.
                        * Great for fitting long text in a tight one-line space
                        * User can scroll, well, page through long text. See demo.
                        * No support for multiple-line text
