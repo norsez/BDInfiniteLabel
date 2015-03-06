@@ -50,8 +50,7 @@
   BDInfiniteLabelTableViewCell *bcell = (BDInfiniteLabelTableViewCell*)cell;
   
   bcell.infiniteLabel.attributedString = [[NSAttributedString alloc] initWithString: _data[indexPath.row] attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor blackColor]}];
-  
-  
+  bcell.infiniteLabel.hasMoreButtonHidden = arc4random() % 2 == 1;
   return cell;
 }
 

@@ -53,7 +53,7 @@
   _scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
   _label = [[UILabel alloc] initWithFrame:CGRectZero];
   _label.numberOfLines = 1;
-  _label.lineBreakMode = NSLineBreakByClipping;
+  _label.lineBreakMode = NSLineBreakByTruncatingTail;
   _label.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
   
   _hasMoreButton = [[UIButton alloc] initWithFrame:CGRectZero];

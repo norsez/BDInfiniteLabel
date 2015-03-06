@@ -36,7 +36,7 @@
 @property (nonatomic, assign) CGFloat hasMoreButtonPadding;
 
 /**
- Disable the has more button and disguise it as UILabel.
+ Disable the has more button and disguise it as UILabel with NSLineBreakByTruncatingTail
  */
 @property (nonatomic, assign) BOOL hasMoreButtonHidden;
 @end
