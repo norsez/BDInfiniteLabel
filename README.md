@@ -7,6 +7,8 @@
 
 ## What is it?
 
+UILabel replacement for when you need to fit a long text into a limited space.
+
 You hate it when long texts mess up your layout on iOS. UILabel font scaling doesn't really look quite right. Multi-line UILabel sometimes is not an option either. 
 
 Meet `BDInfiniteLabel`. 
